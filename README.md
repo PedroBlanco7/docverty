@@ -1,83 +1,93 @@
-# Docverty
+# Docverty — Convert Documents to Markdown
 
-> Convierte documentos a Markdown con un clic — aplicación de escritorio nativa para Windows.
+> **Free native Windows desktop app to convert PDF, Word, Excel, PowerPoint, EPUB, HTML and images to Markdown — in one click.**
 
-**Docverty** es una aplicación de escritorio para Windows que convierte documentos
-(PDF, Word, Excel, PowerPoint, EPUB, HTML, imágenes y más) a formato **Markdown**.
-Tiene una interfaz moderna, soporta arrastrar y soltar, está disponible en 5 idiomas
-y no requiere instalar Python — el instalador es autocontenido.
+**Docverty** is a fast, lightweight **document-to-Markdown converter** for Windows.
+It turns **PDF, DOCX, XLSX, PPTX, EPUB, HTML, CSV, images and 12 more formats**
+into clean Markdown — ideal for **LLMs, RAG pipelines, Obsidian notes, static
+sites and technical documentation**.
 
-Creado por **Pedro Blanco**. Motor de conversión:
-[MarkItDown](https://github.com/microsoft/markitdown) © Microsoft (licencia MIT).
+No terminal, no browser, no Python required. Just install and convert.
 
----
-
-## Características
-
-- **19 formatos** de entrada (PDF, Word, Excel, PowerPoint, EPUB, ZIP, CSV, HTML, imágenes…)
-- **Arrastrar y soltar** archivos directamente desde el Explorador de Windows
-- **Conversión por lotes** — múltiples archivos a la vez, con estado individual
-- **5 idiomas** — español, inglés, portugués, francés y alemán (cambio instantáneo)
-- **Optimización opcional para IA** — limpia el Markdown para usarlo con LLMs
-- **Interfaz nativa** — sin terminal, sin navegador, sin consola
-- **Instalador de Windows** — acceso directo en el menú inicio, desinstalable
-- **Autocontenido** — funciona en cualquier PC con Windows 10/11 sin instalar nada
-
-## Instalación (usuarios)
-
-1. Ve a la pestaña **[Releases](../../releases)** de este repositorio
-2. Descarga `Docverty-Setup.exe`
-3. Ejecútalo y sigue el asistente
-
-> Windows puede mostrar un aviso de SmartScreen la primera vez (normal en
-> instaladores sin firma digital de pago): clic en **Más información →
-> Ejecutar de todas formas**.
-
-## Formatos soportados
-
-| Categoría        | Extensiones |
-|------------------|-------------|
-| Documentos       | `.pdf` `.docx` `.pptx` |
-| Hojas de cálculo | `.xlsx` `.xls` `.csv` |
-| Datos / texto    | `.txt` `.json` `.jsonl` `.xml` |
-| Web              | `.html` `.htm` |
-| Libros           | `.epub` |
-| Comprimidos      | `.zip` |
-| Notebooks        | `.ipynb` |
-| Correos          | `.msg` |
-| Imágenes         | `.jpg` `.jpeg` `.png` (extrae metadatos) |
-
-> **Audio:** no se incluye. MarkItDown puede transcribir audio, pero usa una
-> API gratuita no oficial de Google poco fiable, por lo que se omitió.
-
-## Optimización para IA (opcional)
-
-Hay una casilla **"Optimizar para IA"** sobre los botones de conversión,
-**desactivada por defecto**. Al activarla, el Markdown resultante se limpia:
-
-- Elimina filas de tabla vacías (típicas en PDF con formularios)
-- Colapsa el espaciado sobrante
-
-Es conservadora: no borra contenido real y respeta los bloques de código.
-La conversión normal de Docverty no cambia si la casilla está desmarcada.
-
-## Idiomas
-
-La interfaz está disponible en **español, inglés, portugués, francés y alemán**.
-Se cambia al instante desde el selector 🌐 en la esquina superior derecha.
-Al abrir por primera vez, Docverty detecta el idioma de Windows; la elección
-del usuario se guarda en `%APPDATA%\Docverty\config.json`.
+Built by **Pedro Blanco**. Conversion engine:
+[MarkItDown](https://github.com/microsoft/markitdown) by Microsoft (MIT license).
 
 ---
 
-## Desarrollo
+## Features
 
-### Requisitos
+- **19 input formats** — PDF, Word, Excel, PowerPoint, EPUB, ZIP, CSV, HTML, images and more
+- **Drag and drop** files straight from Windows Explorer
+- **Batch conversion** — convert many files at once, each with its own status
+- **5 interface languages** — English, Spanish, Portuguese, French, German (instant switching)
+- **Optional AI optimization** — cleans the Markdown for use with LLMs and RAG
+- **Native Windows UI** — no console window, no web view
+- **Windows installer** — Start Menu shortcut, clean uninstall
+- **Self-contained** — runs on any Windows 10/11 PC, no dependencies to install
+
+## Download & Install
+
+1. Open the **[Releases](../../releases)** tab of this repository
+2. Download **`Docverty-Setup.exe`**
+3. Run it and follow the installer
+
+> Windows SmartScreen may warn you the first time (normal for installers
+> without a paid code-signing certificate): click **More info → Run anyway**.
+
+## Supported formats
+
+| Category        | Extensions |
+|-----------------|------------|
+| Documents       | `.pdf` `.docx` `.pptx` |
+| Spreadsheets    | `.xlsx` `.xls` `.csv` |
+| Data / text     | `.txt` `.json` `.jsonl` `.xml` |
+| Web             | `.html` `.htm` |
+| E-books         | `.epub` |
+| Archives        | `.zip` |
+| Notebooks       | `.ipynb` |
+| Email           | `.msg` |
+| Images          | `.jpg` `.jpeg` `.png` (metadata extraction) |
+
+> **Audio** is intentionally not included. MarkItDown can transcribe audio, but
+> it relies on an unofficial free Google speech API that is unreliable.
+
+## Why convert documents to Markdown?
+
+Markdown is the lingua franca of modern text workflows. Docverty is useful for:
+
+- **Feeding documents to AI models** (ChatGPT, Claude, Gemini) with clean, token-efficient input
+- **Building RAG knowledge bases** and vector embeddings from PDFs and Office files
+- **Importing content into Obsidian, Notion or static site generators**
+- **Turning reports, contracts and papers into version-controllable plain text**
+
+## AI optimization (optional)
+
+An **"Optimize for AI"** checkbox sits above the convert buttons, **off by
+default**. When enabled, the resulting Markdown is cleaned:
+
+- Removes empty table rows (common in form-style PDFs)
+- Collapses excessive blank lines
+
+It is conservative — it never deletes real content and leaves code blocks
+intact. Docverty's normal conversion is unchanged when the box is unchecked.
+
+## Languages
+
+The interface is available in **English, Spanish, Portuguese, French and
+German**, switchable instantly from the 🌐 selector in the top-right corner.
+On first launch Docverty detects the Windows language; the user's choice is
+saved to `%APPDATA%\Docverty\config.json`.
+
+---
+
+## Development
+
+### Requirements
 
 - Python 3.14
 - Windows 10/11
 
-### Preparar el entorno
+### Set up the environment
 
 ```powershell
 python -m venv .venv
@@ -85,54 +95,73 @@ python -m venv .venv
 pip install -r requirements.txt
 ```
 
-### Descargar exiftool (metadatos de imágenes)
+### Download exiftool (for image metadata)
 
-La carpeta `exiftool/` no se versiona por su tamaño (~33 MB). Para obtenerla:
+The `exiftool/` folder is not versioned due to its size (~33 MB). To get it:
 
-1. Descarga el paquete Windows de [exiftool.org](https://exiftool.org) (`exiftool-XX.XX_64.zip`)
-2. Extráelo
-3. Crea la carpeta `exiftool/` en la raíz del proyecto y copia dentro:
-   - `exiftool(-k).exe` renombrado a `exiftool.exe`
-   - la carpeta `exiftool_files/`
+1. Download the Windows package from [exiftool.org](https://exiftool.org) (`exiftool-XX.XX_64.zip`)
+2. Extract it
+3. Create an `exiftool/` folder in the project root and copy in:
+   - `exiftool(-k).exe` renamed to `exiftool.exe`
+   - the `exiftool_files/` folder
 
-La app funciona sin exiftool, pero las imágenes no extraerán metadatos.
+The app works without exiftool, but images will not extract metadata.
 
-### Ejecutar en modo desarrollo
+### Run in development mode
 
 ```powershell
 python app.py
 ```
 
-### Compilar el ejecutable
+### Build the executable
 
 ```powershell
 .venv\Scripts\pyinstaller.exe Docverty.spec --clean
-# Salida: dist\Docverty.exe
+# Output: dist\Docverty.exe
 ```
 
-> Si regeneras el ícono, ejecuta `python create_icon.py` antes de compilar.
+> If you regenerate the icon, run `python create_icon.py` before building.
 
-### Crear el instalador
+### Build the installer
 
-1. Instala [Inno Setup 6](https://jrsoftware.org/isdl.php) (gratuito)
-2. Asegúrate de que `dist\Docverty.exe` esté actualizado
-3. Abre `setup.iss` con Inno Setup → **Build → Compile** (`Ctrl+F9`)
-4. Salida: `installer\Docverty-Setup.exe`
+1. Install [Inno Setup 6](https://jrsoftware.org/isdl.php) (free)
+2. Make sure `dist\Docverty.exe` is up to date
+3. Open `setup.iss` with Inno Setup → **Build → Compile** (`Ctrl+F9`)
+4. Output: `installer\Docverty-Setup.exe`
 
-## Pila tecnológica
+## Tech stack
 
-- **MarkItDown 0.1.5** (Microsoft, MIT) — motor de conversión
-- **ttkbootstrap** — interfaz gráfica moderna sobre tkinter
-- **tkinterdnd2** — arrastrar y soltar desde el Explorador
-- **Pillow** — procesamiento de imágenes y gradiente
-- **exiftool** — metadatos de imágenes (binario externo)
-- **PyInstaller** — empaquetado a `.exe` autocontenido
-- **Inno Setup** — instalador de Windows
+- **MarkItDown 0.1.5** (Microsoft, MIT) — conversion engine
+- **ttkbootstrap** — modern themed UI on top of tkinter
+- **tkinterdnd2** — drag-and-drop from Windows Explorer
+- **Pillow** — image processing and background gradient
+- **exiftool** — image metadata (external binary)
+- **PyInstaller** — packaging into a self-contained `.exe`
+- **Inno Setup** — Windows installer
 
-## Créditos y licencias
+## FAQ
 
-- Docverty fue creado por **Pedro Blanco**
-- El motor de conversión es [MarkItDown](https://github.com/microsoft/markitdown),
-  publicado por Microsoft bajo licencia MIT
-- Ver [`AVISOS-DE-TERCEROS.txt`](AVISOS-DE-TERCEROS.txt) para las licencias
-  completas de todos los componentes de terceros
+**Is Docverty free?**
+Yes — free and open source.
+
+**Do I need Python installed to use it?**
+No. The installer is fully self-contained and runs on any Windows 10/11 PC.
+
+**Does it work offline?**
+Yes. All conversion runs locally on your machine.
+
+**How is it different from MarkItDown?**
+MarkItDown is a command-line library. Docverty wraps it in a polished native
+Windows app with drag-and-drop, batch conversion and a multilingual UI — so you
+don't need a terminal.
+
+**Can it convert PDF to Markdown?**
+Yes — PDF, Word, Excel, PowerPoint, EPUB, HTML and more, all to Markdown.
+
+## Credits & license
+
+- Docverty was created by **Pedro Blanco**
+- The conversion engine is [MarkItDown](https://github.com/microsoft/markitdown),
+  released by Microsoft under the MIT license
+- See [`AVISOS-DE-TERCEROS.txt`](AVISOS-DE-TERCEROS.txt) for full third-party
+  license notices
