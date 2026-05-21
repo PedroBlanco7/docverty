@@ -1,0 +1,20 @@
+# Dependencias de Docverty (Python 3.14)
+# Instalar con:  pip install -r requirements.txt
+
+# --- Tiempo de ejecución ---
+markitdown==0.1.5    # Motor de conversión (Microsoft, MIT)
+pdfplumber           # Soporte de PDF para markitdown 0.1.x
+ttkbootstrap         # Interfaz gráfica moderna sobre tkinter
+tkinterdnd2          # Arrastrar y soltar archivos desde el Explorador
+pillow               # Imágenes, gradiente e ícono
+
+# --- Solo para compilar el .exe ---
+pyinstaller          # Empaquetado a ejecutable autocontenido
+
+# NOTA: el extra markitdown[all] no se instala completo en Python 3.14
+# (youtube-transcript-api fija una versión incompatible). Las dependencias
+# de conversión de Office/PDF/EPUB/ZIP ya quedan cubiertas por markitdown
+# + pdfplumber. La transcripción de audio no se incluye en Docverty.
+#
+# exiftool NO es un paquete de pip: es un binario que va en la carpeta
+# exiftool/ del proyecto. Ver LEAME.md para descargarlo.

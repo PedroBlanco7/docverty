@@ -1,0 +1,30 @@
+# Entorno virtual
+.venv/
+venv/
+env/
+
+# Artefactos de compilación (PyInstaller / Inno Setup)
+build/
+dist/
+installer/
+
+# Caché de Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Archivos de prueba personales
+*.pdf
+actividad-fisica.md
+
+# exiftool (binario de terceros ~33 MB — ver LEAME.md para descargarlo)
+exiftool/
+
+# Sistema operativo
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Editores
+.vscode/
+.idea/

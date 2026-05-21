@@ -1,0 +1,82 @@
+================================================================================
+  Docverty — Avisos de software de terceros
+================================================================================
+
+Docverty fue creado por Pedro Blanco.
+
+Esta aplicación incluye y utiliza componentes de software de código abierto
+desarrollados por terceros. A continuación se listan dichos componentes junto
+con sus respectivas licencias, tal como lo requieren los términos de las mismas.
+
+
+--------------------------------------------------------------------------------
+  1. MarkItDown  —  motor de conversión de documentos
+--------------------------------------------------------------------------------
+Copyright (c) Microsoft Corporation.
+Sitio: https://github.com/microsoft/markitdown
+Licencia: MIT
+
+MIT License
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+
+--------------------------------------------------------------------------------
+  2. ExifTool  —  extracción de metadatos de imágenes
+--------------------------------------------------------------------------------
+Copyright (c) Phil Harvey.
+Sitio: https://exiftool.org
+
+ExifTool is free software; you can redistribute it and/or modify it under the
+same terms as Perl itself, that is, under the terms of either:
+
+  a) the GNU General Public License as published by the Free Software
+     Foundation; either version 1, or (at your option) any later version, or
+
+  b) the "Artistic License".
+
+
+--------------------------------------------------------------------------------
+  3. ttkbootstrap  —  componentes de interfaz gráfica
+--------------------------------------------------------------------------------
+Copyright (c) Israel Dryer.
+Sitio: https://github.com/israel-dryer/ttkbootstrap
+Licencia: MIT (mismos términos que el apartado 1).
+
+
+--------------------------------------------------------------------------------
+  4. tkinterdnd2 y tkdnd  —  funcionalidad de arrastrar y soltar
+--------------------------------------------------------------------------------
+tkinterdnd2 — Copyright (c) Petasis George y colaboradores.
+tkdnd       — Copyright (c) Georgios Petasis.
+Licencia: MIT / BSD (software libre).
+
+
+--------------------------------------------------------------------------------
+  5. Pillow  —  procesamiento de imágenes
+--------------------------------------------------------------------------------
+Copyright (c) Jeffrey A. Clark y colaboradores.
+Sitio: https://python-pillow.github.io
+Licencia: MIT-CMU (HPND), software libre.
+
+
+================================================================================
+Cada componente conserva su propia licencia y derechos de autor. Docverty no
+reclama autoría sobre ninguno de los componentes de terceros aquí listados.
+================================================================================
